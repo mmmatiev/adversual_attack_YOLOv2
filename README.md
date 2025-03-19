@@ -4,6 +4,9 @@
 
 Этот проект создан в рамках учебно-исследовательской практики НИУ ВШЭ, в нем реализуется создание и тестирование adversarial-патчей для атаки на детектор объектов YOLO v2. Главной целью данной работы является демонстрация уязвимости современных сверточных нейронных сетей перед атаками с использованием adversarial-патчей. Проект повторяется статью Fooling automated surveillance cameras: adversarial patches to attack person detection[https://arxiv.org/pdf/1904.08653]
 
+![OBJ](Slide_Show/obj.gif) ![CLS](Slide_Show/cls.gif) ![OBJ_CLS](Slide_Show/obj-cls.gif)
+
+
 ## Структура проекта
 
 Проект включает несколько ключевых частей:
