@@ -34,6 +34,14 @@ cd adversual_attack_YOLOv2
 ```bash
 pip install -r requirements.txt
 ```
+### Получение весов YOLOv2
+
+Убедитесь, что у вас есть веса YOLOv2 MS COCO:
+```bash
+mkdir weights
+curl https://pjreddie.com/media/files/yolov2.weights -o weights/yolo.weights
+```
+
 ### Получение набора данных INRIA
 
 Для загрузки набора данных INRIA Person выполните следующие команды:
@@ -60,10 +68,11 @@ python train_patch.py <obj|cls|obj-cls> [resume_path] [init_image_path]
 ```bash
 python compare.py --modes obj cls obj-cls --epochs 50
 ```
-### Получение весов YOLOv2
-
-Убедитесь, что у вас есть веса YOLOv2 MS COCO:
-```bash
-mkdir weights
-curl https://pjreddie.com/media/files/yolov2.weights -o weights/yolo.weights
+```
+@inproceedings{thysvanranst2019,
+    title={Fooling automated surveillance cameras: adversarial patches to attack person detection},
+    author={Thys, Simen and Van Ranst, Wiebe and Goedem\'e, Toon},
+    booktitle={CVPRW: Workshop on The Bright and Dark Sides of Computer Vision: Challenges and Opportunities for Privacy and Security},
+    year={2019}
+}
 ```
